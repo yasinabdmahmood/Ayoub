@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+    <title>Ayob</title>
+</head>
+<body>
+    <div class="output-area">
+        <span>مساحة كل فرد</span>
+        <div class="output-fields">
+            <div class="donem-out-container"> 
+                <span>دونم</span>
+                <div  id="donem-out"  ></div>
+            </div>
+            <div class="olk-out-container"> 
+                <span>اولك</span>
+                <div  id="olk-out" ></div>
+            </div>
+            <div class="meter-out-container"> 
+                <span>متر</span>
+                <div  id="meter-out" ></div>
+            </div>
+        </div>   
+    </div>
+    <div class="right">
+        <div class="total-shares">
+            <span>حصة الكلية بالاسهم</span>
+            <input type='number' >
+        </div>
+        <div class="single-shares">
+            <span>حصة لكل فرد</span>
+            <input type='number' >
+        </div>
+        <div class="output-area">
+            <span>مساحة الكلية</span>
+            <div class="output-fields">
+                <div class="donem-out-container"> 
+                    <span>دونم</span>
+                    <input type='number' id="donem-in" >
+                </div>
+                <div class="olk-out-container"> 
+                    <span>اولك</span>
+                    <input type='number' id="olk-in" >
+                </div>
+                <div class="donem-out-container"> 
+                    <span>متر</span>
+                    <input type='number' id="meter-in" >
+                </div>
+            </div>   
+        </div>
+        <div class="calculate">
+            <button type="submit" id="calculate">احسب</button>
+        </div>
+    </div>
+</body>
+</html>
