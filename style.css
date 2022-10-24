@@ -101,6 +101,8 @@ input:focus {
 	body {
         flex-direction: column-reverse;
     }
-
+    input:focus {
+        transform: scale(1);
+    }
     
 }
