@@ -14,8 +14,8 @@ function calculate() {
     const olk2 = Math.floor((a2%2500)/100);
     const mtr2 = (a2%2500)%100;
     console.log(don2,olk2,mtr2)
-    document.getElementById('donem-out').innerHTML =don2;
-    document.getElementById('olk-out').innerHTML =olk2;
-    document.getElementById('meter-out').innerHTML =mtr2;
+    document.getElementById('donem-out').value =don2;
+    document.getElementById('olk-out').value =olk2;
+    document.getElementById('meter-out').value =mtr2;
 
 }

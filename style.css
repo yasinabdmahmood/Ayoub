@@ -73,11 +73,18 @@ body {
 }
 
 #donem-out , #olk-out , #meter-out {
-    padding: 0.5rem 1rem;
+    text-align: center;
+    /* padding: 0.5rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 25px;
-    border: 1px solid black 
+    */
+}
+
+@media only screen and (max-width: 600px){
+	body {
+        flex-direction: column-reverse;
+    }
+
+    
 }
