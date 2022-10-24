@@ -10,6 +10,10 @@ body {
     background: radial-gradient(circle, rgba(58,137,138,1) 5%, rgba(24,195,199,1) 76%);
 }
 
+input:focus {
+    transform: scale(1.5);
+}
+
 .output-area {
     display: flex;
     flex-direction: column;
