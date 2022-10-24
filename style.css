@@ -9,7 +9,12 @@ body {
     background: rgb(58,137,138);
     background: radial-gradient(circle, rgba(58,137,138,1) 5%, rgba(24,195,199,1) 76%);
 }
-
+input {
+    border-radius: 5px;
+    border: 0px;
+    min-height: 25px;
+    font-size: 20px;
+}
 input:focus {
     transform: scale(1.5);
 }
@@ -80,6 +85,11 @@ input:focus {
 
 #donem-out , #olk-out , #meter-out {
     text-align: center;
+    transform: scale(1.2);
+    background-color: white;
+    border: 0px;
+    border-radius: 4px;
+    color: black;
     /* padding: 0.5rem 1rem;
     display: flex;
     justify-content: center;
