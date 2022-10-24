@@ -15,9 +15,7 @@ input {
     min-height: 25px;
     font-size: 20px;
 }
-input:focus {
-    transform: scale(1.5);
-}
+
 
 .output-area {
     display: flex;
@@ -101,8 +99,6 @@ input:focus {
 	body {
         flex-direction: column-reverse;
     }
-    input:focus {
-        all: unset;
-    }
+   
     
 }
