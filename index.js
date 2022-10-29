@@ -1,7 +1,9 @@
 const btn = document.querySelector("#calculate");
 btn.addEventListener('click',calculate)
-document.querySelector('.total-shares input').addEventListener('click',()=>(
-window.scrollTo(0, 0)))
+yourInput = document.querySelector('.total-shares input');
+yourInput.readOnly = true;
+yourInput.focus();
+setTimeout(function(){document.getElementById('yourInputElement').readOnly = false;}, 50)
 //
 
 function calculate() {
