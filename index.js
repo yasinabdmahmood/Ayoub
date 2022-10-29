@@ -1,10 +1,9 @@
 const btn = document.querySelector("#calculate");
 btn.addEventListener('click',calculate)
 yourInput = document.querySelector('.total-shares input');
-yourInput.readOnly = true;
+
 yourInput.focus();
-setTimeout(function(){document.getElementById('yourInputElement').readOnly = false;}, 50)
-//
+
 
 function calculate() {
     const numOfAllShares =parseInt(document.querySelector('.total-shares input').value) ;
