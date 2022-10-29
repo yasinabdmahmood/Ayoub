@@ -1,5 +1,8 @@
 const btn = document.querySelector("#calculate");
 btn.addEventListener('click',calculate)
+document.querySelector('.total-shares input').addEventListener('click',()=>(
+window.scrollTo(0, 0)))
+//
 
 function calculate() {
     const numOfAllShares =parseInt(document.querySelector('.total-shares input').value) ;
