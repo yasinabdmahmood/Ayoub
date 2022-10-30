@@ -1,18 +1,15 @@
 const btn = document.querySelector("#calculate");
 btn.addEventListener('click',calculate)
 yourInput = document.querySelector('.total-shares input');
-$( document ).ready(function() {
-    if(navigator.userAgent.indexOf('Android') > -1){           
-        $('html').css({ "overflow": "auto !important" });
-        $('body').css({ "height": "auto !important" });
-        $('body').css({ "overflow": "auto !important" });
-        $('.scrollable').css({ "position": "inherit !important" });
-        $('body').on('focusin', 'input, textarea', function(event) {
-             alert("test");
-             var scroll = $(this).offset();
-             window.scrollTo(0, scroll);               
-        });
-   }
+$('input').focus( function() {
+
+    var $input = $(this);
+    $input.css('background', 'yellow');
+
+    var scroll = $input.offset();
+    $input.closest('#viewport').animate({
+      scrollTop: $input.offset().top
+    }, 'slow');
 });
 
 
