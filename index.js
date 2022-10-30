@@ -9,6 +9,15 @@ function calculate() {
     const don = parseInt(document.querySelector('#donem-in').value) ;
     const olk = parseInt(document.querySelector('#olk-in').value) ;
     const mtr = parseInt(document.querySelector('#meter-in').value) ;
+    check1();
+    check2();
+    check3();
+    if(!check1()||!check2()||!check3()){
+    document.getElementById('donem-out').value ='';
+    document.getElementById('olk-out').value ='';
+    document.getElementById('meter-out').value ='';
+        return ;
+    }
     const area = 2500*don+100*olk+mtr;
     const ratio = numOfSingleShare/numOfAllShares;
     const a2 = area*ratio;
@@ -21,3 +30,51 @@ function calculate() {
     document.getElementById('meter-out').value =mtr2;
 
 }
+
+//////
+const aler1 = document.querySelector('.alert');
+aler1.addEventListener('click',()=>{
+    aler1.style.display='none';
+})
+const aler2 = document.querySelector('.alert2');
+aler2.addEventListener('click',()=>{
+    aler2.style.display='none';
+});
+const aler3 = document.querySelector('.alert3');
+aler3.addEventListener('click',()=>{
+    aler3.style.display='none';
+})
+const check3=()=>{
+   
+    const mtr = parseInt(document.querySelector('#meter-in').value) ;
+    if(mtr>=100){
+      
+        aler3.style.display='flex';
+        return false;
+    }
+    else return true
+}
+const check2=()=>{
+   
+    const olk = parseInt(document.querySelector('#olk-in').value) ;
+
+    if(olk>=25){
+      
+        aler2.style.display='flex';
+        return false;
+    }
+    else return true
+}
+const check1=()=>{
+    const numOfAllShares =parseInt(document.querySelector('.total-shares input').value) ;
+    const numOfSingleShare =parseInt(document.querySelector('.single-shares input').value) ;
+    const don = parseInt(document.querySelector('#donem-in').value) ;
+    const olk = parseInt(document.querySelector('#olk-in').value) ;
+    const mtr = parseInt(document.querySelector('#meter-in').value) ;
+    if(!(numOfAllShares&&numOfSingleShare&&don&&olk&&mtr)){
+        aler1.style.display='flex'
+        return false;
+    }
+    else return true
+}
+//////

@@ -98,6 +98,35 @@ input {
     */
 }
 
+.alert , .alert2 , .alert3 {
+    display: none;
+    position: absolute;
+    width: 80%;
+    justify-content: center;
+    align-self: center;
+    border-radius: 10px;
+    background-color: red;
+    padding: 1rem 1rem;
+    margin: 4rem;
+    top: 3rem;
+}
+.alert span ,.alert2 span , .alert3 span {
+    padding: 2rem;
+   text-align: center;
+    background-color: red;
+    color: white;
+    font-size: 1.2rem;
+}
+.alert {
+    display: none;
+}
+.alert2 {
+    display: none;
+}
+.alert3 {
+    display: none;
+}
+
 @media only screen and (max-width: 600px){
 	body {
         flex-direction: column-reverse;
