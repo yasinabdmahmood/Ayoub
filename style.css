@@ -98,8 +98,11 @@ input {
 
 @media only screen and (max-width: 600px){
 	body {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
-   
+   input:focus {
+    scroll-margin: 0px;
+    scroll-padding: 0px;
+   }
     
 }
