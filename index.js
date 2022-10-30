@@ -8,7 +8,7 @@ $( document ).ready(function() {
         $('body').css({ "overflow": "auto !important" });
         $('.scrollable').css({ "position": "inherit !important" });
         $('body').on('focusin', 'input, textarea', function(event) {
-             //alert("test");
+             alert("test");
              var scroll = $(this).offset();
              window.scrollTo(0, scroll);               
         });
