@@ -97,9 +97,9 @@ input {
 }
 
 @media only screen and (max-width: 600px){
-	/* body {
-        flex-direction: column-reverse;
-    } */
+	body {
+        flex-direction: column;
+    }
    
     
 }
