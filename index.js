@@ -2,7 +2,7 @@ const btn = document.querySelector("#calculate");
 btn.addEventListener('click',calculate)
 yourInput = document.querySelector('.total-shares input');
 
-yourInput.focus();
+yourInput.scrollIntoView();
 
 
 function calculate() {
