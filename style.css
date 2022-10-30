@@ -107,5 +107,18 @@ input {
     scroll-margin: 0px;
     scroll-padding: 0px;
    }
+   .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    order: 1;
+    padding: 1.5rem;
+   }
+   .header span {
+    color: white;
+    font-size: 1.5rem;
+   }
     
 }
