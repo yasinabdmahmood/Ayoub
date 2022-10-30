@@ -99,6 +99,7 @@ input {
 @media only screen and (max-width: 600px){
 	body {
         flex-direction: column-reverse;
+        position: absolute;
     }
    input:focus {
     scroll-margin: 0px;
