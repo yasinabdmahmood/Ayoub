@@ -1,16 +1,6 @@
 const btn = document.querySelector("#calculate");
 btn.addEventListener('click',calculate)
-yourInput = document.querySelector('.total-shares input');
-$('input').focus( function() {
 
-    var $input = $(this);
-    $input.css('background', 'yellow');
-
-    var scroll = $input.offset();
-    $input.closest('#viewport').animate({
-      scrollTop: $input.offset().top
-    }, 'slow');
-});
 
 
 function calculate() {
