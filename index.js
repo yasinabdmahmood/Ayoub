@@ -1,8 +1,15 @@
 const btn = document.querySelector("#calculate");
 btn.addEventListener('click',calculate)
 yourInput = document.querySelector('.total-shares input');
-
-yourInput.addEventListener('focus', (event) => {   event.preventDefault(); });
+document.addEventListener("DOMContentLoaded", function() {
+    document.ontouchmove = function(e){
+         e.preventDefault();
+         }
+});
+yourInput.onfocus = function () {
+    window.scrollTo(0, 0);
+    document.body.scrollTop = 0;
+}
 
 
 function calculate() {
