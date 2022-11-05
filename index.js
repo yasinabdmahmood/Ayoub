@@ -66,11 +66,11 @@ const check2=()=>{
     else return true
 }
 const check1=()=>{
-    const numOfAllShares =parseInt(document.querySelector('.total-shares input').value) ;
-    const numOfSingleShare =parseInt(document.querySelector('.single-shares input').value) ;
-    const don = parseInt(document.querySelector('#donem-in').value) ;
-    const olk = parseInt(document.querySelector('#olk-in').value) ;
-    const mtr = parseInt(document.querySelector('#meter-in').value) ;
+    const numOfAllShares =document.querySelector('.total-shares input').value ;
+    const numOfSingleShare =document.querySelector('.single-shares input').value ;
+    const don = document.querySelector('#donem-in').value ;
+    const olk = document.querySelector('#olk-in').value ;
+    const mtr = document.querySelector('#meter-in').value ;
     if(!(numOfAllShares&&numOfSingleShare&&don&&olk&&mtr)){
         aler1.style.display='flex'
         return false;
